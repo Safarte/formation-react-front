@@ -16,6 +16,8 @@ yarn install
 
 ## Usage
 
+You need to complete the code if you want the website to work properly !
+
 To run this website locally execute `yarn start` in the working directory.
 
 ## API
