@@ -36,9 +36,9 @@ To post a message from specified user on specified board:
 POST /messages
 body:
 {
-  content: "blabla",
-  userId: 42,
-  boardId: 1
+  "content": "blabla",
+  "userId": 42,
+  "boardId": 1
 }
 ```
 
@@ -48,8 +48,8 @@ To register a new user (returns the user):
 POST /users => Object
 body:
 {
-  username: "blabla",
-  paswword: "verysecure"
+  "username": "blabla",
+  "paswword": "verysecure"
 }
 ```
 
@@ -59,7 +59,7 @@ To login an user (returns a list containing the matching users):
 POST /login => [Object]
 body:
 {
-  username: "blabla",
-  paswword: "verysecure"
+  "username": "blabla",
+  "paswword": "verysecure"
 }
 ```
