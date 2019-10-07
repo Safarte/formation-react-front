@@ -48,7 +48,7 @@ To register a new user (returns the user):
 POST /users => Object
 body:
 {
-  "username": "blabla",
+  "username": "henry",
   "paswword": "verysecure"
 }
 ```
@@ -59,7 +59,7 @@ To login an user (returns a list containing the matching users):
 POST /login => [Object]
 body:
 {
-  "username": "blabla",
+  "username": "henry",
   "paswword": "verysecure"
 }
 ```
