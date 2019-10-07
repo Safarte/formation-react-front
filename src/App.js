@@ -1,26 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, Switch } from 'react-router-dom';
+import { withRouter } from 'react-router';
+import BoardsList from './components/BoardsList';
+import Board from './components/Board';
+import Login from './components/Login';
+
+
+// Set this to true in order to use the login page
+const USE_LOGIN = false;
+// Set this to true in order to use the boards list page
+const USE_BOARDSLIST = false;
+
+
+const BoardsListComponent = USE_BOARDSLIST ? BoardsList : Board;
+const LoginComponent = USE_LOGIN ? Login : BoardsListComponent;
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className='App'>
+        <Switch id='switch'>
+          <Route exact path='/' component={LoginComponent}/>
+          <Route exact path='/boards' component={BoardsListComponent}/>
+          <Route path='/board/:id' component={Board}/>
+        </Switch>
+      </div>
   );
 }
 
-export default App;
+export default withRouter(App);
