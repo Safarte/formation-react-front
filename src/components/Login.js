@@ -8,12 +8,12 @@ const API_URL = 'http://138.195.142.10';
 // Attempts to login and if successful stores the userId in localStorage and redirects to the boards list
 const handleLogin = async (username, password) => {
 
-};
+}
 
 // Attempts to register and if successful stores the userId in localStorage and redirects to the boards list
 const handleRegister = async (username, password) => {
 
-};
+}
 
 const Login = () => {
     // Initializes username and password in the state
@@ -22,6 +22,6 @@ const Login = () => {
         <div>
         </div>
     );
-};
+}
 
 export default withRouter(Login);

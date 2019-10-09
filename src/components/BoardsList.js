@@ -9,7 +9,7 @@ const API_URL = 'http://138.195.142.10';
 // Gets the list of boards
 const getBoardList = async () => {
 
-};
+}
 
 const BoardsList = () => {
     // Initialize the list of boards
@@ -18,6 +18,6 @@ const BoardsList = () => {
         <div>
         </div>
     );
-};
+}
 
 export default withRouter(BoardsList);
