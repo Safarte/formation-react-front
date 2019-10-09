@@ -50,6 +50,7 @@ const Board = (props) => {
     );
 }
 
+
 const MessageList = (props) => {
     // Setup states for the messages and users lists
 
@@ -67,12 +68,14 @@ const MessageList = (props) => {
     );
 }
 
+
 const MessageDisplay = (props) => {
     return(
         <div>
         </div>
     );
 }
+
 
 const MessageWriter = (props) => {
     // Setup a state for the message being written
